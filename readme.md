@@ -1,0 +1,3 @@
+This repository contains the theme files, including custom post types defined within the mu-plugins folder for the custom WordPress theme created for and used by ifrs.site, the website for the International Federation of Rural Surgeons. While the files of this repository are not directly used to deploy the site to the internet, it can be used test changes to the website on a local install of WordPress. An installation of node.js is required to build the CSS used in this website when run locally.
+
+This theme was created by Kevin Gnanaraj based on the course on developing a WordPress theme by Brad Schiff of learnwebcode.com, and is provided under the MIT license.
