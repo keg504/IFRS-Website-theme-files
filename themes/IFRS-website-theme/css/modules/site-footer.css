@@ -1,0 +1,96 @@
+/*footer {
+  display: block;
+  position: absolute;
+  bottom: 0rem;
+}
+
+.footer-spacing
+{
+  bottom: 0px;
+  position: fixed;
+  display: block;
+  margin: 0rem;
+  background-color: #202020;
+  width: 100%;
+  height: 100%;
+  padding: 0rem;
+  overflow: hidden;
+}*/
+
+.site-footer {
+  padding: 5vh 0 2.5rem 0;
+  background-color: #202020;
+  position: absolute;
+  margin-top: 0rem;
+  bottom: 0;
+  display: block;
+  width: 100%;
+
+  p {
+    font-size: .9rem;
+  }
+
+  .headline {
+    color: #666;
+    margin-bottom: .33rem;
+  }
+
+  &__link {
+    color: #999;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: none;
+  }
+
+  &__inner {
+    
+  }
+
+  &__col-one {
+    text-align: center;
+    @mixin atMedium {
+      text-align: left;
+      width: 33%;
+      float: left;
+    }
+  }
+
+  &__col-two-three-group {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    @mixin atMedium {
+      text-align: left;
+      float: left;
+      width: 42%;
+      margin: 0;
+    }
+  }
+
+  &__col-two {
+    width: 50%;
+    float: left;
+  }
+  &__col-three {
+    width: 50%;
+    float: left;
+  }
+  &__col-four {
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    @mixin atMedium {
+      padding-top: 0;
+      margin: 0;
+      clear: none;
+      text-align: left;
+      width: 25%;
+      float: right;
+    }
+  }
+}
