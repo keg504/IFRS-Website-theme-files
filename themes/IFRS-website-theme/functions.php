@@ -62,7 +62,6 @@
     {
         wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
         wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-        wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDntxfie2fn9B7YGpbeck9g-GpaWsu83mo', NULL, /* Change for deployment */ microtime(), true);
 
         if (strstr($_SERVER['SERVER_NAME'], 'international-federation-of-rural-surgeons.local')) {
             wp_enqueue_script('main-scripts', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
