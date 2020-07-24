@@ -24,7 +24,7 @@
   <p><a href="<?php echo site_url('/past-events')?>">Past events archive here</a></p>
 
 </div>
-
+<br/><br/>
 <?php
 
   get_footer();

@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-
+<br/><br/>
 <?php
 
     get_footer();

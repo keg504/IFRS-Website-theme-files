@@ -23,7 +23,7 @@
 
         // Publication Post type
         register_post_type("publication", array(
-            "supports" => array("title"),
+            "supports" => array("title", "excerpt"),
             "rewrite" => array("slug" => "publications"),
             "has_archive" => true,
             "public" => true,

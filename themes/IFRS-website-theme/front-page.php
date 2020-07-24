@@ -125,6 +125,8 @@
         </div>
       </div>
 
+      <br/><br/>
+
 <?php
       wp_reset_postdata();
     }

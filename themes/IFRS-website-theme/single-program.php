@@ -32,11 +32,52 @@ while(have_posts()) {
                 <?php }
                 echo "</ul>";
             }
+
+            // Find related events related to the program
+            $today = date("Ymd");
+            $related_events = new WP_Query(array(
+                "posts_per_page" => -1,
+                "post_type" => "event",
+                "meta_key" => "event_date",
+                "orderby" => "meta_value_num",
+                "order" => "ASC",
+                "meta_query" => array(
+                  array(
+                      "key" => "event_date",
+                      "compare" => ">=",
+                      "value" => $today,
+                      "type" => "numeric"
+                  ),
+                  array(
+                      "key" => "related_program",
+                      "compare" => "LIKE",
+                      "value" => '"' . get_the_ID() . '"' // Needs to be double quotes within single quotes, NOT the other way around (Will not work otherwise)
+                  )
+                )
+              ));
+  
+              // Output related events, if any, below the relevant publication
+              if ($related_events->post_count != 0)
+              {
+                  var_dump($related_events);
+                  echo '<hr class="section-break">';
+                  echo '<h2 class="headline headline--small">Upcoming related events</h2>';
+                  
+                  while($related_events->have_posts())
+                  {
+                      $related_events->the_post();
+                      get_template_part("template-parts/content-event"); 
+                  }
+              }
+  
+              wp_reset_postdata();
             
         ?>
         
 
     </div>
+
+    <br/><br/>
 
 <?php }
 

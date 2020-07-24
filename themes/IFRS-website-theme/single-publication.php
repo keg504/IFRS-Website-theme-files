@@ -27,7 +27,9 @@ get_header();
                     <li style="display:inline"><a href="<?php echo esc_url($publicationDocument['url']) ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
                     <li style="display:inline">&nbsp;&nbsp;</li>
                     <li style="display:inline"><a href="<?php echo esc_url($publicationDocument['url']) ?>"><?php echo $publicationDocument['filename']; ?></a></li>
-                </ul> 
+                </ul>
+                <br/>
+                <p><?php echo get_the_excerpt(); ?></p> 
                 <?php
             }
             else
@@ -44,7 +46,7 @@ get_header();
             if ($relatedMembers)
             {
                 echo "<hr class='section-break'>";
-                echo '<h2 class="headline headline--small">Author(s)</h2>';
+                echo '<h2 class="headline headline--small">IFRS Author(s)</h2>';
                 foreach($relatedMembers as $member)
                 { ?>
                     <ul class='link-list min-list'>
@@ -55,7 +57,16 @@ get_header();
                 <?php }
             }
 
-            // Find related events related to the program
+            // Find and display non-IFRS authors of the post, if any
+            $nonIFRS_authors = get_field("non-ifrs_authors");
+            if ($nonIFRS_authors)
+            {
+                echo "<hr class='section-break'>";
+                echo '<h2 class="headline headline--small">non-IFRS Author(s)</h2>';
+                echo the_field('non-ifrs_authors');
+            }
+
+            // Find related events related to the publication
             $related_events = new WP_Query(array(
               "posts_per_page" => -1,
               "post_type" => "event",
@@ -91,7 +102,7 @@ get_header();
         ?>
 </div>
 
-
+<br/><br/>
 
 <?php 
     
