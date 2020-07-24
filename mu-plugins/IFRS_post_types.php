@@ -74,7 +74,7 @@
 
         // Media Post type
         register_post_type("media", array(
-            "supports" => array("editor", "thumbnail"),
+            "supports" => array("title", "editor", "thumbnail"),
             "rewrite" => array("slug" => "media"),
             "has_archive" => true,
             "public" => true,
@@ -90,7 +90,7 @@
 
         // Front notice post type for slideshow on homepage
         register_post_type("front-notice", array(
-            "supports" => array(''),
+            "supports" => array('title'),
             "public" => true,
             "labels" => array(
                 "name" => "Front Notices",

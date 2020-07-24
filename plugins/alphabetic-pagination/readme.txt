@@ -3,13 +3,14 @@ Contributors: fahadmahmood
 Tags: pagination, filtering, alphabetic, sorting, listing, posts, pages, navigation, categories, taxonomies, custom, arabic, english, russian, korean, hungarian, greek, chameleon, wpml, translation, CPT-onomies
 Requires at least: 3.0
 Tested up to: 5.4
-Stable tag: 2.8.5
+Stable tag: 2.8.6
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Alphabetic pagination is a great plugin to filter your posts/pages and WooCommerce products with alphabets. It is simple to use and easy to understand for customization.
 
 
 == Description ==
+
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
 
 * Project URI: <http://androidbubble.com/blog/wordpress/plugins/alphabetic-pagination>
@@ -18,6 +19,8 @@ Alphabetic pagination is a great plugin to filter your posts/pages and WooCommer
 
 * WooCommerce Product Category: <http://demo.androidbubble.com/product-category/food-items>
 
+This plugin enables pagination on posts and pages by default. Templates are avarialble with another WordPress plugin Chameleon to shape your page with different style. You can display pagination on archives, categories, shops, portfolio, or selected post/page/product/category etc.
+
 * License: GPL 3. See License below for copyright jots and titles.
 
 Important!
@@ -25,6 +28,25 @@ Important!
 Visit my blog and suggest good features which you wana see in this plugin.
 
 [Blog][Wordpress][]: <http://androidbubble.com/blog/category/website-development/php-frameworks/wordpress>
+
+
+###Basic Features
+* Auto Implementation
+* Display Empty Alphabets (ON/OFF)
+* Alphabets Grouping
+* Hide/Show pagination if only one post available (ON/OFF)
+* Specific DOM & CSS selectors
+* Language selection
+* Styles and Templates (Using WordPress Plugin Chameleon)
+* Custom DOM & CSS selectors
+* Manage settings page with Android App (Google Play Store)
+
+###Advanced Features
+* Custom Implementation
+* Shortcodes for Pagination
+* Shortcodes for Listing/Results
+* Shortcodes for Users List
+* jQuery/JS based one page listing and pagination
 
 == Video Tutorials ==
 

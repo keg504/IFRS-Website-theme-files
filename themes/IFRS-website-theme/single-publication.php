@@ -34,24 +34,6 @@ get_header();
             {
                 echo '<p>Error. Document not found</p>';
             }
-
-            $embeddedDocument = get_field("embedded_viewer");
-
-            if ($embeddedDocument)
-            {
-                echo $embeddedDocument;
-                ?>
-                <ul class="link-list min-list">
-                    <li style="display:inline"><a href="<?php echo esc_url($embeddedDocument['url']) ?>"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    <li style="display:inline">&nbsp;&nbsp;</li>
-                    <li style="display:inline"><a href="<?php echo esc_url($embeddedDocument['url']) ?>"><?php echo $publicationDocument['filename']; ?></a></li>
-                </ul> 
-                <?php
-            }
-            else
-            {
-                echo '<p>Error. Document not found</p>';
-            }
         ?>
     </div>
     <?php
