@@ -20,6 +20,7 @@
         <div class="metabox">
           <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time("n.j.y"); ?> in <?php echo get_the_category_list(", "); ?></p>
         </div>
+        <p><?php echo get_the_excerpt(); ?></p>
         <div class="generic-content">
           <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Get File &raquo;</a></p>
         </div>
@@ -29,6 +30,8 @@
     echo paginate_links();
   ?>
 </div>
+
+<br/><br/>
 
 <?php
 

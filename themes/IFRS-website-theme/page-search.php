@@ -59,6 +59,8 @@ Is not loaded if JavaScript has loaded and overlay works -->
     ?>
   </div>
 
+  <br/><br/>
+
 <?php }
 
     get_footer();

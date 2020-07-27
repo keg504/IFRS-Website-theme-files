@@ -30,6 +30,7 @@
     echo paginate_links();
   ?>
 </div>
+<br/><br/>
 
 <?php
 
