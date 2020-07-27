@@ -44,11 +44,9 @@
                                 ?>
 
                                 <!-- HTML based footer menu. Not used for this website. WordPress version is used instead -->
-                                <!--<ul>
-                                    <li><a href="#">Legal</a></li>
-                                    <li><a href="<?php echo site_url("/privacy-policy") ?>">Privacy</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>-->
+                                <ul>
+                                    <li><a href="<?php echo wp_login_url(); ?>">Site Login</a></li>
+                                </ul>
                             </nav>
                         </div>
                     </div>

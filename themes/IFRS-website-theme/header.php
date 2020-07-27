@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header class="site-header">
             <div class="container">
-                <h1 class="school-logo-text float-left"><a href="<?php echo site_url() ?>"><strong>International Federation of Rural Surgeons</strong></a></h1>
+                <a href="<?php echo site_url() ?>"><img style="width: 200px; height: 40px; padding: 0; margin: 0;" src="<?php echo get_theme_file_uri("/images/header-logo.png") ?>" class="float-left"/></a>
                 <a href="<?php echo esc_url(site_url('/search')); ?>" class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></a>
                 <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
                 <div class="site-header__menu group">
@@ -29,7 +29,6 @@
                             <li <?php if(get_post_type() == "event" OR is_page("past-events")) echo "class='current-menu-item'"?>><a href="<?php echo get_post_type_archive_link('event')?>">Events</a></li>
                             <li <?php if(get_post_type() == "program") echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link( 'program' )?>">Training Programs</a></li>
                             <li <?php if(get_post_type() == "campus") echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link("campus") ?>">Publications</a></li>
-                            <li><a href="#">Contact Us</a></li>
                             <li <?php if (get_post_type() == "post") echo 'class="current-menu-item"'; ?>><a href="#">Blog</a></li>
                         </ul>-->
                     </nav>
@@ -44,8 +43,7 @@
                         }
                         else
                         { ?>
-                            <a href="<?php echo wp_login_url(); ?>" class="btn btn--small btn--blue float-left push-right">Login</a>
-                            <a href="<?php echo wp_registration_url(); ?>" class="btn btn--small  btn--green float-left">Sign Up</a>
+                            <a href="<?php echo esc_url((site_url('/ifrs-registration'))); ?>" class="btn btn--small  btn--blue float-left">Register</a>
                         <?php }
                         ?>
                         <a href="<?php echo esc_url(site_url('/search')); ?>" class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></a>

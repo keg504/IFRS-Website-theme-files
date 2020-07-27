@@ -7,9 +7,11 @@
 ?>
 
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri("/images/library-hero.jpg") ?>);"></div>
+  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri("/images/surgery-banner.jpg") ?>);"></div>
     <div class="page-banner__content container t-center c-white">
-      <h3 class="headline headline--small">Working to make surgery accessible worldwide</h3>
+      <h2 class="headline headline--medium">Working to make surgery accessible worldwide</h2>
+      <h3 class="headline headline--small">Register for membership today</h3>
+      <a href="<?php echo esc_url(site_url( '/ifrs-registration')); ?>" class="btn btn--large btn--blue">Register</a>
     </div>
   </div>
 
