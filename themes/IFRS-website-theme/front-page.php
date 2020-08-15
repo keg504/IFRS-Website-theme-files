@@ -122,17 +122,15 @@
               }
             ?>
           </div>
-          <div style="background-color: #202020;" class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+          <div hidden style="background-color: #202020;" class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
           </div>
         </div>
       </div>
 
-      <br/><br/>
-
 <?php
       wp_reset_postdata();
     }
-
+    echo "";
     get_footer();
 
 ?>

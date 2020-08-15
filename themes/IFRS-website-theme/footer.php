@@ -1,8 +1,6 @@
 <!-- Format for footer that is loaded on every webpage for the website.
  Please do not deploy on website without proper testing on a test server.
  Called using wordpress get_footer() function -->
-
-            <div class="push"></div>
         </div>
         <footer class="site-footer">
 

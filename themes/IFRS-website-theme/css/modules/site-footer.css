@@ -20,7 +20,7 @@
 .site-footer {
   padding: 5vh 0 2.5rem 0;
   background-color: #202020;
-  position: absolute;
+  /*position: absolute;*/
   margin-top: 0rem;
   bottom: 0;
   display: block;
